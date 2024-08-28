@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="logo-alura">
+            <img src="Img/Logo.png" lat="logo de alura">
+        </div>
+        <div class="seccion-1">
+            <div class="agregar-texto">
+                <textarea class="agregar-texto-encriptar" id="agregar-texto-encriptar" placeholder="Escribe tus mensajes aqui"></textarea>
+                <div class="abajo-texto">
+                    <p>Solo letras mayusculas y sin acentos</p>
+                        <div class="botones">
+                            <button class="boton boton-encriptar"id="boton-encriptar">Encriptar</button>
+                            <button class=" boton boton-desencriptar" id="boton-desencriptar">Desencriptar</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+
+            <div class="seccion-2" id="seccion-2">
+                <div class="resultado no-texto-encriptado">
+                    <div class="no-texto" id="no-texto">
+                        <img class="muñeco" src="Img/Muñeco.png" alt="un vato bien guapo con una lupa">
+                        <h1>Ningún mensaje fue encontrado</h1>
+                        <p class="p-Seccion-2">Ingresa el texto que quieres encriptar o desencriptar</p>
+                    </div>    
+                    <div id="seccion-resultado">
+                        <textarea class="copiar-texto-desencriptar" id="copiar-texto-desencriptar"></textarea>
+                        <button class="boton boton-desencriptar boton-copiar" id="boton-copiar" onclick="ocultarImagen();">Copiar</button>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <footer>
+        <div class="pie-pagina">
+            <p class="pie-texto">Desarrollado por Javier Alexis Mendoza Urquieta</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
